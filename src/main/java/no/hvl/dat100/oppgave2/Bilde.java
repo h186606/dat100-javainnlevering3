@@ -25,7 +25,8 @@ public class Bilde extends Tekst {
 
 	@Override
 	public String toString() {
-		return "BILDE\n" + super.toString() + url + "\n";
+		// Siden super.toString() includerer TEKST, så skrives denne for hånd.
+		return "BILDE\n" + getId() + "\n" + getBruker() + "\n" + getDato() + "\n" + getLikes() + "\net bilde\n" + url + "\n";
 	}
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
